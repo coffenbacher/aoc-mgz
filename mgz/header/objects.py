@@ -1,6 +1,6 @@
 from construct import *
-from aoc.mgz.enums import *
-from aoc.mgz.util import *
+from mgz.enums import *
+from mgz.util import *
 
 """Object IDs can be looked up via Advanced Genie Editor"""
 

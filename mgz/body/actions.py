@@ -1,6 +1,6 @@
 from construct import *
-from aoc.mgz.body.achievements import *
-from aoc.mgz.enums import *
+from mgz.body.achievements import *
+from mgz.enums import *
 
 """Not all actions are defined, not all actions are complete"""
 

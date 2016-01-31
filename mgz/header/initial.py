@@ -1,8 +1,8 @@
 from construct import *
-from aoc.mgz.header.objects import *
-from aoc.mgz.header.playerstats import *
-from aoc.mgz.enums import *
-from aoc.mgz.util import *
+from mgz.header.objects import *
+from mgz.header.playerstats import *
+from mgz.enums import *
+from mgz.util import *
 
 """Player attributes"""
 attributes = Struct("attributes",

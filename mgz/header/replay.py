@@ -1,5 +1,5 @@
 from construct import *
-from aoc.mgz.enums import *
+from mgz.enums import *
 
 """Basic information about the recorded game"""
 replay = Struct("replay",

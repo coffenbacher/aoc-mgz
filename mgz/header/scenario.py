@@ -1,6 +1,6 @@
 from construct import *
-from aoc.mgz.enums import *
-from aoc.mgz.util import *
+from mgz.enums import *
+from mgz.util import *
 
 """Scenario Header"""
 scenario_header = Struct("scenario_header",

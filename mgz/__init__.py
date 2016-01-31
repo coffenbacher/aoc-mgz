@@ -1,12 +1,12 @@
 from construct import *
-from aoc.mgz.util import *
-from aoc.mgz.header.map import *
-from aoc.mgz.header.ai import *
-from aoc.mgz.header.lobby import *
-from aoc.mgz.header.replay import *
-from aoc.mgz.header.scenario import *
-from aoc.mgz.header.achievements import *
-from aoc.mgz.header.initial import *
+from mgz.util import *
+from mgz.header.map import *
+from mgz.header.ai import *
+from mgz.header.lobby import *
+from mgz.header.replay import *
+from mgz.header.scenario import *
+from mgz.header.achievements import *
+from mgz.header.initial import *
 
 """Header is compressed"""
 header = Struct("header",

@@ -1,6 +1,6 @@
 from construct import *
-from aoc.mgz.enums import *
-from aoc.mgz.body.actions import *
+from mgz.enums import *
+from mgz.body.actions import *
 
 """An mgz body is a stream of Operations
 
@@ -103,6 +103,7 @@ savedchapter = Struct("saved_chapter",
 
 """Operation"""
 operation = Struct("operation",
+	Anchor("start"),
 	Peek(OperationEnum(ULInt32("type"))),
 	ULInt32("op"),
 	Embed(Switch("data", lambda ctx: ctx.type,
@@ -112,5 +113,7 @@ operation = Struct("operation",
 			"message": message,
 			"savedchapter": savedchapter
 		}
-	))
+	)),
+	Anchor("end"),
+	Value("total_bytes", lambda ctx: ctx.end - ctx.start)
 )

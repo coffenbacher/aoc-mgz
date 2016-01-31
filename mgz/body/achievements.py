@@ -1,5 +1,5 @@
 from construct import *
-from aoc.mgz.util import TimeSecAdapter
+from mgz.util import TimeSecAdapter
 
 """UserPatch 1.4 achievements - appended to recorded game"""
 
